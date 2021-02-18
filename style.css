@@ -94,6 +94,6 @@ button{
     cursor: pointer;
 }
 
-.fa-trash-alt, .fa-edit {
+.fa-trash-alt, .fa-save, .fa-edit {
 font-size: 1.2rem;
 }
