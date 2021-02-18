@@ -12,14 +12,14 @@ function createNewNote(){
     <div class="notes"  id="notes">
     <div class="tools">
         <button class="smallBtn edit">
-            <i class="editIcon far fa-edit"></i>
+            <i class="editIcon far fa-save"></i>
         </button>
         <button class="smallBtn delete">
             <i class="far fa-trash-alt"></i>
         </button>
     </div>
-    <div class="main"></div>
-    <textarea class="textarea hidden"></textarea>
+    <div class="main hidden"></div>
+    <textarea class="textarea"></textarea>
     </div>`
  
     //document.querySelector(".newNotes").appendChild(newNote);
@@ -43,6 +43,7 @@ function createNewNote(){
         main.classList.toggle("hidden");
         textarea.classList.toggle("hidden");
         textarea.select();
+        editIcon.classList.toggle("fa-edit");
         editIcon.classList.toggle("fa-save");
     })
     textarea.addEventListener("input", function(input){
